@@ -219,8 +219,8 @@ static void __set_poe(int port, int val){
 	action для устанавки состояние определенного PoE порта
 */
 static void do_action_set_poe(void){
-	if(port < 0 || port > 3)
-		die_and_mess(-20, "port value must be 0..3");
+	if(port < 0 || port > 7)
+		die_and_mess(-20, "port value must be 0..7");
 	if(val < 0 || val > 2)
 		die_and_mess(-20, "PoE value must be 0..2");
 	__set_poe(port, val);

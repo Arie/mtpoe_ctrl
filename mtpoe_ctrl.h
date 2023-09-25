@@ -6,7 +6,7 @@
 //ключ субконфига uci->network в котором находятся настройки PoE
 #define MTIK_POE_UCI_CONFIG_KEY "mtik_poe"
 //сколько всего PoE портов
-#define POE_PORTS_N 4
+#define POE_PORTS_N 8
 //где находится файл с board_name
 #define BOARD_NAME_FILE "/tmp/sysinfo/board_name"
 
@@ -78,7 +78,7 @@ const struct my_option my_options[] = {
   define_str_opt(poe_uci_config_key),
   define_int_opt(period, 0, 3600),
   define_flag_opt(verbose),
-  define_int_opt(port, 0, 3),
+  define_int_opt(port, 0, 7),
   define_int_opt(val, 0, 0xFFFF),
   define_flag_opt(version),
   define_str_opt(raw_hex_val),
